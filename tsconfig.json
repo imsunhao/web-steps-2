@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "outDir": "dist",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
+    "types": ["jest", "puppeteer"],
+    "paths": {
+      "@web-steps-2/*": ["packages/*/src"],
+      "shared/*": ["packages/shared/src/utils/*"]
+    },
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "keyofStringsOnly": true
+  },
+  "include": [
+    "packages/global.d.ts",
+    "packages/*/src",
+    "packages/*/@types",
+    "__tests__",
+    "*.vue",
+    "submodule/test-source"
+  ]
+}

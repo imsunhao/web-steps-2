@@ -1,0 +1,29 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Jest",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/jest.js",
+      "stopOnEntry": false,
+      "args": ["${fileBasename}", "--runInBand", "--detectOpenHandles", "--show=true"],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": null,
+      "runtimeExecutable": null,
+      "runtimeArgs": ["--nolazy"],
+      "env": {
+        "NODE_ENV": "test",
+        "VUE_ENV": "server",
+        "WEB_STEPS": true,
+        "VSCODE": true,
+        "DEBUG_PORT": 32000
+      },
+      "console": "integratedTerminal",
+      "sourceMaps": true
+    }
+  ]
+}
